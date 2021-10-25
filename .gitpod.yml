@@ -1,0 +1,26 @@
+
+tasks:
+  - name: Node
+    init: yarn install
+# Maak regel hieronder actief om de server automatisch te laten starten:
+# command: node server-app.js 3000
+
+  - name: SQLite
+    init: | # zorg ervoor dat een en ander mooier werkt in de CLI van sqlite
+              printf '.headers on\n.mode column\n.nullvalue NULL' >> ~/.sqliterc
+    command: | # bouw db opnieuw op en open een terminalvenster
+              sqlite3 database/database.db < database/db-deletion.sql &&
+              sqlite3 database/database.db < database/db-creation.sql &&
+              sqlite3 database/database.db
+    openMode: tab-after
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-browser
+    visibility: public
+
+vscode:
+  extensions:
+    - gruntfuggly.activitusbar
+    - mhutchie.git-graph
