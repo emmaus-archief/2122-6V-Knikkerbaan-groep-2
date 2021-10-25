@@ -10,7 +10,9 @@ Lorem ipsum...
 
 ## Idee
 Ons idee was om een knikkerbaan te maken die...
-(gebruik gerust plaatjes)
+(gebruik gerust plaatjes) 
+kijk in map fotos naar KnikkerBaan.png
+
 
 
 
