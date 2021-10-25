@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Default Dark+",
+  "activitusbar.views": [
+  
+    {
+      "name": "task.resetDB",
+      "codicon": "database",
+      "tooltip": "Bouw de database opnieuw op"
+    }
+  ],
+  "activitusbar.activeColour": "#ffffff",
+  "activitusbar.inactiveColour": "#ffffff"
+}
