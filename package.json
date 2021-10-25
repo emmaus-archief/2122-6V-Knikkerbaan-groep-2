@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "better-sqlite3": "^7.4.3",
+    "express": "^4.17.1"
+  },
+  "name": "6v-eindopdracht",
+  "version": "1.0.0",
+  "main": "server-app.js",
+  "scripts": {
+    "start": "node server-app.js"
+  },
+  "repository": "https://github.com/cam-emmauscollege/6v-eindopdracht.git",
+  "author": "cam-emmauscollege <cam@emmauscollege.nl>",
+  "license": "MIT"
+}
