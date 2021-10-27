@@ -32,7 +32,7 @@ void loop() {
   // nu is het tijd om contact te leggen met de server:
   if (millis() > tijdVoorContactMetServer + LEEGLOOP_TIJD) {
     Serial.print("Er zijn nu zoveel knikkers geteld: ");
-    Serial.println(tellerA.getAantal())
+    Serial.println(tellerA.getAantal());
 
 
     // en zet nu het poortje weer open:
