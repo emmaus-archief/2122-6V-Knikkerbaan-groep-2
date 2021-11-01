@@ -28,7 +28,7 @@ De knikkerbaan zendt de hoeveelheid getelde knikkers naar een server die de gege
 In de browser kan met een URL een widget worden geladen. Deze geeft de knikkerbaan schematisch weer in een frame van 800x400px. De getelde knikkers en duur dat de poort openstaat worden hierin getoond. De duur dat de poort openstaat kan hierin worden veranderd. De knikkerbaan kan deze wachttijd van de server ontvangen en zijn werking erop aanpassen.
 
 ### feature 4: Snelheid van knikkers wordt opgenomen
-<beschrijf hier feature 4>
+Er zijn twee sensoren, een bij de LED en een in het begin (zoals aangegeven in onze tekening). Wij meten hier de afstand tussen de twee verschillende punten waar de sensoren zitten, deze sensoren meten dan de tijd die de knikkers erover doen om die afstand te overbruggen. Er is ook een wiel aanwezig, die de snelheid van een van de knikkers dus verandert van de 'normale' weg. Door deze twee gegevens (afstand en tijd) kunnen wij dan de snelheid berekenen.
 
 
 ### feature 5: Info wordt op scherm weergegeven
