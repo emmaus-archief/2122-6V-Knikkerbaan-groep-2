@@ -4,9 +4,16 @@
 ---
 
 ## Inleiding
-Lorem ipsum...
 
 
+## wat hebben we nodig?
+- Wiel 
+- Trechter
+- 2 leds
+- 5 sensoren
+- Scherm
+- Poortje
+- Ong 25 plankjes  
 
 ## Features
 Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes) kijk in map fotos naar KnikkerBaan.png . De eerste paar zijn voorgegeven:
