@@ -37,9 +37,15 @@ In de browser kan met een URL een widget worden geladen. Deze geeft de knikkerba
 
 ### week 43
 
+Opmaak ontwerp en ideeen.
+
 ### week 44
 
+Behandelen uitlegfilmpjes op de ELO. 
+
 ### week 45
+
+TOETSWEEK
 
 ### week ...
 
