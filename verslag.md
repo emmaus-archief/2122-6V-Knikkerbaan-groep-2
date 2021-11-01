@@ -20,11 +20,11 @@ De knikkerbaan zendt de hoeveelheid getelde knikkers naar een server die de gege
 ### feature 3: Widget wisselt info uit met knikkerbaan
 In de browser kan met een URL een widget worden geladen. Deze geeft de knikkerbaan schematisch weer in een frame van 800x400px. De getelde knikkers en duur dat de poort openstaat worden hierin getoond. De duur dat de poort openstaat kan hierin worden veranderd. De knikkerbaan kan deze wachttijd van de server ontvangen en zijn werking erop aanpassen.
 
-### feature 4:
+### feature 4: Snelheid van knikkers wordt opgenomen
 <beschrijf hier feature 4>
 
 
-### feature 5:
+### feature 5: Info wordt op scherm weergegeven
 <beschrijf hier feature 5>
 
 
@@ -57,6 +57,8 @@ Geef hier bijvoorbeeld de volgene informatie, maar voel je vrij er informatie aa
 De Arduino werkt op de volgende manier:
 
 De knikkerbaan en de widget wisselen de volgende data met elkaar uit:
+
+- 
 
 We hebben dat op deze manier genormaliseerd in een database opgenomen (neem een strokendiagram op). De reden dat we voor ... kiezen is...
 
