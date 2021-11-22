@@ -49,7 +49,7 @@ Opmaak ontwerp en ideeen.
 ### week 44
 
 Behandelen uitlegfilmpjes op de ELO. 
-- deze is niet voltooid, vanwege voorbereiding op de toetsweek
+ deze is niet voltooid, vanwege voorbereiding op de toetsweek.
 
 ### week 45
 
