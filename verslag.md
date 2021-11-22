@@ -63,6 +63,7 @@ Restweek van de toetsweek.
 
 Code sensor opstellen (jimmy en luna)
  en de uitlegfilmpjes behandelen (iedereen), deze staan op de ELO. 
+ Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
 
 
 
