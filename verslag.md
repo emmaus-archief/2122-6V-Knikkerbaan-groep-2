@@ -49,12 +49,20 @@ Opmaak ontwerp en ideeen.
 ### week 44
 
 Behandelen uitlegfilmpjes op de ELO. 
+- deze is niet voltooid, vanwege voorbereiding op de toetsweek
 
 ### week 45
 
 TOETSWEEK
 
-### week ...
+### week 46
+
+Restweek van de toetsweek.
+
+### week 47
+
+Code sensor opstellen (jimmy en luna)
+ en de uitlegfilmpjes behandelen (iedereen), deze staan op de ELO. 
 
 
 
