@@ -34,6 +34,13 @@ void loop() {
     Serial.print("Er zijn nu zoveel knikkers geteld: ");
     Serial.println(tellerA.getAantal());
 
+    String data = "knikkers=";
+    data += tellerA.getAantal();
+
+    wifi.stuurVerzoek("/api/set/sensordata", data.c_str());
+
+    tijdVoorContactMetServer = millis() + serverContactInterval * 1000;
+
 
     // en zet nu het poortje weer open:
     poortBoven.open();
