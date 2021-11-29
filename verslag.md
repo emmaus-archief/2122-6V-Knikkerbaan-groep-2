@@ -65,11 +65,15 @@ Code sensor opstellen (jimmy en luna)
  en de uitlegfilmpjes behandelen (iedereen), deze staan op de ELO. 
  Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
 
- ### week 48 
+### week 48 
 
  afspraak ht voor bouw knikkerbaan (Helke en Caitlin)
  Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
 
+### week 49 
+
+knikkerbaan bouwen en monteren bij HT (Helke en Caitlin)
+SQL code opzetten voor knikkerbaan (Helke en Caitlin)
 
 
 ## Technische verantwoording
