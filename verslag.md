@@ -7,8 +7,8 @@
 
 
 ## wat hebben we nodig?
-- Wiel 
-- Trechter
+- Wiel (gemaakt door ijslollystokjes)
+- Trechter ( van papier/karton maken)
 - 2 leds
 - 5 sensoren
 - Scherm
@@ -75,6 +75,11 @@ Code sensor opstellen (jimmy en luna)
 knikkerbaan bouwen en monteren bij HT (Helke en Caitlin)
 SQL code opzetten voor knikkerbaan (Helke en Caitlin)
 
+nieuwe .ino bestand opzetten voor het berekenen en opnemen van snelheid (luna en jimmy)
+
+### week 50 
+
+### week 51
 
 ## Technische verantwoording
 Geef hier bijvoorbeeld de volgene informatie, maar voel je vrij er informatie aan toe te voegen.
