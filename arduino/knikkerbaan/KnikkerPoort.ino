@@ -13,8 +13,9 @@ class KnikkerPoort {
     bool isOpen = false;
 
   public:
-    KnikkerPoort(){};
-    KnikkerPoort(int _pin, int _gradenOpen, int _gradenDicht) {
+    KnikkerPoort(){}
+  
+    void begin(int _pin, int _gradenOpen, int _gradenDicht) {
       pin = _pin;
       pinMode(pin, OUTPUT);
       poortServo.attach(pin);
