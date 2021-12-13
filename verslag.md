@@ -79,6 +79,8 @@ nieuwe .ino bestand opzetten voor het berekenen en opnemen van snelheid (luna en
 
 ### week 50 
 
+
+
 ### week 51
 
 ## Technische verantwoording

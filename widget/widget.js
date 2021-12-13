@@ -3,10 +3,13 @@
 var aantalKnikkersBoven = 0;    // aantal knikkers dat bovenin is binnengekomen
 var wachttijd = 15;             // wachttijd voor het poortje in seconden
 const UPDATE_INTERVAL = 5000;   // tijd in milliseconden tussen het door widget opvragen van gegevens
-var button;
 var teller;
+var sensor;
 var wachtijdInput;
-
+var rad;
+var scherm;
+var led;
+var poortje;
 
 /**
  * setup
@@ -17,7 +20,16 @@ function setup() {
   // Maak het canvas van je widget
   createCanvas(300, 600);
 
-  teller = new Teller(150, 50);
+  teller = new Teller (150, 50);
+  poortje = new Poortje (100, 50);
+  rad = new Rad (200,200);
+  led = new Led (10,10); 
+  led2 = new Led2 (10,10);
+  scherm = new Scherm (150, 100);
+
+
+
+
 
 
   // om de ... milliseconden wordt 'vraagSensorData' uitgevoerd
@@ -44,6 +56,9 @@ function draw() {
   line(250, 20, 165, 60);
 
   teller.show();
+  scherm.show();
+  sensor.show();
+
 }
 
 
