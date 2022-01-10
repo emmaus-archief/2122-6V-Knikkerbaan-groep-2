@@ -79,9 +79,35 @@ nieuwe .ino bestand opzetten voor het berekenen en opnemen van snelheid (luna en
 
 ### week 50 
 
-
+Iedereen zit thuis. Geen afspraak gemaakt. 
 
 ### week 51
+
+kerstvakantie
+
+### week 1
+
+kerstvakantie
+
+### week 2
+
+Jimmy en Luna code voor sensor, teller, LED, scherm en poortje. 
+Jimmy en Luna .ino bestand maken voor (ir-)sensor en berekenen snelheid.
+
+### week 3
+
+afmaken codes + bord. 
+alle puntjes op de i zetten. 
+
+### week 4 
+
+TOETSWEEK
+
+### week 5
+
+EINDDATUM PROJECT
+
+
 
 ## Technische verantwoording
 Geef hier bijvoorbeeld de volgene informatie, maar voel je vrij er informatie aan toe te voegen.
