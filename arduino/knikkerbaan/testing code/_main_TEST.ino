@@ -4,6 +4,8 @@
 
 radMotor servoRad = radMotor (3,90);
 SensorPoort servoPoort = SensorPoort (3, 90, 0);
+LedRood ledPinRood = LedRood ();
+LedGroen ledPinGroen = LedGroen ();
 
 void setup() {
   Serial.begin(9600);
@@ -21,6 +23,15 @@ void loop() {
   
   servoPoort.sluit();
 
+   ledPinRood.on();
+   delay(3000);
+   ledPinRood.off();
+   delay(3000);
+
+   ledPinGroen.on();
+   delay(3000);
+   ledPinGroen.off();
+   delay(3000);
   
   // laat de teller detecteren:
 
