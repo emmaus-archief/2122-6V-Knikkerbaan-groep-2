@@ -1,3 +1,8 @@
+
+//////////////////////////////////
+// OBSOLETE CODE NIET GEBRUIKEN //
+//////////////////////////////////
+
 class StoplichtLED {
   private:
     int pinRood = 5;
