@@ -11,11 +11,12 @@ class SensorPoort {
     int pin = 4;
     int gradenOpen = 90;
     int gradenDicht = 0;
-    int oldtime = 0;
     bool isOpen = false;
 
     public:
-      SensorPoort( int _pin, int _gradenOpen, int _gradenDicht) {
+    SensorPoort(){}
+
+      void begin ( int _pin, int _gradenOpen, int _gradenDicht) {
         pin = _pin;
         pinMode(pin, OUTPUT);
         sensorServo.attach(pin);
