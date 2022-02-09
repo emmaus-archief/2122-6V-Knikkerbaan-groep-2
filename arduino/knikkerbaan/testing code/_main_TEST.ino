@@ -17,7 +17,7 @@ void setup() {
 
   servoRad.open();
 
-  servoPoort.open();
+  servoPoort.begin();
 }
 
 
