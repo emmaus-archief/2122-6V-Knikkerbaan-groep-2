@@ -15,19 +15,26 @@ LedGroen ledPinGroen = LedGroen ();
 void setup() {
   Serial.begin(9600);
 
-  servoRad.open();
+  servoPoort.begin(4, 0, 90);
+  servoPoort.open();
 
-  servoPoort.begin();
+  servoRad.begin(13,80);
+  
 }
 
 
 void loop() {
 
-
-  servoRad.sluit();
+// laat het rad draaien
+  servoRad.open();
   
+// sluit en opent de poorten
+  delay(3000);
   servoPoort.sluit();
+  delay(3000);
+  servoPoort.open();
 
+//knippert de leds
    ledPinRood.on();
    delay(3000);
    ledPinRood.off();
