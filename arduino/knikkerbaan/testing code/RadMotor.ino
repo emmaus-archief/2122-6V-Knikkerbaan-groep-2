@@ -8,32 +8,34 @@
 class radMotor {
     private:
     Servo radServo;
-    int pin = 3; 
-    int angle = 90;
-    int oldtime = 0;
+    int pin = 13;
+    int angle = 80;
+    unsigned long oldtime = 0;
     int randomSpeed = 80;
     bool isOn = false;
 
     public:
-      radMotor( int _pin, int _angle) {
+    radMotor(){}
+
+      void begin( int _pin, int _angle) {
         pin = _pin;
         pinMode(pin, OUTPUT);
         radServo.attach(pin);
         angle = _angle;
         oldtime = millis();
-        sluit();
+
       }
 
-    void sluit() {
+    void close() {
       radServo.write(90);
       isOn = false;
     }
 
     void open() {
-      if ( (millis()- oldtime) > 10000) {
+      if ( ( millis() - oldtime) > 5000) {
         oldtime = millis();
 
-        randomSpeed = random(0, 90);
+        randomSpeed = random(0, 50);
       }
       
       radServo.write(randomSpeed);
