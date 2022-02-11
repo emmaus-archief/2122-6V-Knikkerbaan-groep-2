@@ -66,7 +66,6 @@ Restweek van de toetsweek.
 - Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
 
 ### week 48 
-<<<<<<< HEAD
 - afspraak ht voor bouw knikkerbaan (Helke en Caitlin)
 - Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
 
@@ -74,13 +73,12 @@ Restweek van de toetsweek.
 Helke ziek
 de rest?
 
-<<<<<<< HEAD
 ### week 50
 Helke ziek
 de rest?
 
 ### week 51
-begin VAKANTIE 
+LOCKDOWN
 
 ### week 52 
 VAKANTIE
