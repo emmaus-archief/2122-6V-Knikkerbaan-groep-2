@@ -1,5 +1,5 @@
 # Verslag eindopdracht 6V
-### gemaakt door *--leerling1--*, *--leerling2--*, *etc*
+### gemaakt door Jimmy, Helke, Luna, Caitlin 
 
 ---
 
@@ -7,8 +7,8 @@
 
 
 ## wat hebben we nodig?
-- Wiel 
-- Trechter
+- Rad 
+- Trechter 
 - 2 leds
 - 5 sensoren
 - Scherm
@@ -44,11 +44,11 @@ Er zijn twee sensoren, een bij de LED en een in het begin (zoals aangegeven in o
 
 ### week 43
 
-Opmaak ontwerp en ideeen.
+- Opmaak ontwerp en ideeen.
 
 ### week 44
 
-Behandelen uitlegfilmpjes op de ELO. 
+- Behandelen uitlegfilmpjes op de ELO. 
  deze is niet voltooid, vanwege voorbereiding op de toetsweek.
 
 ### week 45
@@ -61,15 +61,57 @@ Restweek van de toetsweek.
 
 ### week 47
 
-Code sensor opstellen (jimmy en luna)
- en de uitlegfilmpjes behandelen (iedereen), deze staan op de ELO. 
- Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
+- Code sensor opstellen (jimmy en luna)
+- de uitlegfilmpjes behandelen (iedereen)
+- Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
 
- ### week 48 
+### week 48 
+- afspraak ht voor bouw knikkerbaan (Helke en Caitlin)
+- Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
 
- afspraak ht voor bouw knikkerbaan (Helke en Caitlin)
- Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
+### week 49 
+Helke ziek
+de rest?
 
+### week 50
+Helke ziek
+de rest?
+
+### week 51
+begin VAKANTIE 
+
+### week 52 
+VAKANTIE
+
+### week 1
+VAKANTIE
+
+### week 2 
+??
+
+### week 3
+TOETSWEEK
+
+### week 4
+TOETSWEEK
+
+### week 5 
+- onderdelen op het bord zetten (iedereen)
+- aan code werken (Jimmy() en Luna())
+
+### week 6 
+- aan code werken (Jimmy(servo's en ir sensors) en Luna(scherm?))
+- bord schilderen en extra's (Helke)
+- verslag upaten (Helke)
+- widget (Helke en Jimmy)
+
+### week 7 
+- extras op het bord en finishing touches (Helke)
+- functionele onderdelen op het bord (Helke)
+- Arduino delen op het bord (Helke en Jimmy)
+
+### week 8 
+- kinkkerbaan af 
 
 
 ## Technische verantwoording
@@ -87,10 +129,14 @@ Uitdagingen die we tegenkwamen:
 
 
 ## Reflectie op opdracht
-#### --leerling1--
+#### Helke
 *(50 - 100 woorden. Geef o.a. wat je tijdens deze opdracht beter onder de knie hebt gekregen en welk leerpunt je voor jezelf meeneemt)*
 
-#### --leerling2--
+#### Jimmy
+
+#### Luna
+
+#### Caitlin
 
 
 
