@@ -10,6 +10,7 @@ var rad;
 var scherm;
 var led;
 var poortje;
+var snelheidsmeter;
 
 /**
  * setup
@@ -26,7 +27,7 @@ function setup() {
   led = new Led (10,10); 
   led2 = new Led2 (10,10);
   scherm = new Scherm (150, 100);
-
+  snelheidsmeter = new Snelheidsmeter (100, 50);
 
 
 
