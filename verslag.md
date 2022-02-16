@@ -97,10 +97,10 @@ TOETSWEEK
 
 ### week 5 
 - onderdelen op het bord zetten (iedereen)
-- aan code werken (Jimmy() en Luna())
+- aan code werken (Jimmy() en Luna(LED's))
 
 ### week 6 
-- aan code werken (Jimmy(servo's en ir sensors) en Luna(scherm?))
+- aan code werken (Jimmy(servo's en ir sensors) en Luna(LCD-scherm))
 - bord schilderen en extra's (Helke)
 - verslag upaten (Helke)
 - widget (Helke en Jimmy)
@@ -109,6 +109,7 @@ TOETSWEEK
 - extras op het bord en finishing touches (Helke)
 - functionele onderdelen op het bord (Helke)
 - Arduino delen op het bord (Helke en Jimmy)
+- aan code werken (Luna (LCD scherm))
 
 ### week 8 
 - kinkkerbaan af 
