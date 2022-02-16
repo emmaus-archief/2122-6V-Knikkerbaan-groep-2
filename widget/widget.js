@@ -56,9 +56,32 @@ function draw() {
   line(50, 20, 135, 60);
   line(250, 20, 165, 60);
 
+  // rails die de knikker afloopt
+  line(50, 20, 120, 60);
+  line(100, 20, 120, 60);
+  line(50, 50, 120, 60);
+  line(100, 50, 120, 60);
+  line(150, 80, 120, 60);
+  line();
+  line();
+  line();
+  line();
+  line();
+  line();
+
+  // arduino elementen
   teller.show();
   scherm.show();
   sensor.show();
+  snelheidsmeter.show();
+
+  //LED 
+
+  //poortje
+
+  //rad
+
+  //trechter
 
 }
 
