@@ -4,12 +4,13 @@ var aantalKnikkersBoven = 0;    // aantal knikkers dat bovenin is binnengekomen
 var wachttijd = 15;             // wachttijd voor het poortje in seconden
 const UPDATE_INTERVAL = 5000;   // tijd in milliseconden tussen het door widget opvragen van gegevens
 var teller;
-var sensor;
 var wachtijdInput;
+var sensor;
 var rad;
 var scherm;
 var led;
 var poortje;
+var snelheidsmeter;
 
 /**
  * setup
@@ -21,15 +22,15 @@ function setup() {
   createCanvas(300, 600);
 
   teller = new Teller (150, 50);
+
+  /*
   poortje = new Poortje (100, 50);
   rad = new Rad (200,200);
   led = new Led (10,10); 
   led2 = new Led2 (10,10);
   scherm = new Scherm (150, 100);
-
-
-
-
+  snelheidsmeter = new Snelheidsmeter (100, 50);
+  */
 
 
   // om de ... milliseconden wordt 'vraagSensorData' uitgevoerd
@@ -47,7 +48,7 @@ function draw() {
   // hieronder wordt schematisch een knikkerbaan getekend
 
   // achtergrond: houtkleur, kies gerust iets anders
-  background(175, 144, 105);
+  background(0, 160, 150);
 
   // twee dikke strepen als 'opvangbak'
   stroke(0, 0, 0);
@@ -55,10 +56,24 @@ function draw() {
   line(50, 20, 135, 60);
   line(250, 20, 165, 60);
 
-  teller.show();
-  scherm.show();
-  sensor.show();
+  // rails die de knikker afloopt
+  line(100, 150, 150, 100);
+  line(100, 150, 150, 20);
+  
 
+
+  // arduino elementen
+  teller.show();
+  
+
+  //LED 
+
+  //poortje
+
+  //rad
+
+  //trechter
+  
 }
 
 
