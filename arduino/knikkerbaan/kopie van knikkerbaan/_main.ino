@@ -10,6 +10,7 @@ SensorPoort servoPoort = SensorPoort();
 IRsensor poortDetector = IRsensor(7);
 IRsensor LEDSensorL = IRsensor(8);
 IRsensor LEDSensorR = IRsensor(6);
+IRsensor SnelheidsSensor = IRsensor(5);
 
 Led LEDRood = Led(9);
 Led LEDGroen = Led(10);
@@ -17,6 +18,11 @@ Led LEDGroen = Led(10);
 unsigned long poortTime = 0;
 unsigned long LedRoodTime = 0;
 unsigned long LedGroenTime = 0;
+
+int speedTrapDelay = 4000;
+unsigned long speedBeginTime = 4000;
+unsigned long speedEndTime = 0;
+unsigned long deltaTime = 0;
 
 int serverContactInterval = 15;                // 15 seconden
 unsigned long tijdVoorContactMetServer = 0;
@@ -79,12 +85,27 @@ void loop() {
 
   if(LEDSensorR.isOnderbroken()) {
     LEDGroen.on();
+
+    if((millis() - speedBeginTime) > speedTrapDelay) {
+      speedBeginTime = millis();
+    }
   }
 
   else {
     LEDGroen.off();
   }
 //einde LEDS//
+
+//SnelheidsSensor
+SnelheidsSensor.update();
+
+  if(SnelheidsSensor.isOnderbroken()) {
+    speedEndTime = millis();
+  }
+
+//delta tijd voor het berekenen van snelheid
+deltaTime = speedEndtime - speedBeginTime;
+  }
   
   // pauzeer de knikkerbaan als het tijd is voor contact met server
   if (millis() > tijdVoorContactMetServer && poortBoven.getOpen()) {
