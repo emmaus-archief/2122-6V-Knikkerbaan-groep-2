@@ -62,13 +62,6 @@ function draw() {
   // streep naar rad
   line(200, 175, 145, 100);
 
-  /*
-  // rails die de knikker afloopt
-  line(100, 150, 150, 100);
-  line(100, 150, 150, 20);
-  */
-
-
   // arduino elementen
   teller.show();
   
