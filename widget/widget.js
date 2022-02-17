@@ -48,18 +48,25 @@ function draw() {
   // hieronder wordt schematisch een knikkerbaan getekend
 
   // achtergrond: houtkleur, kies gerust iets anders
-  background(0, 160, 150);
+  background(71, 71, 70);
 
   // twee dikke strepen als 'opvangbak'
   stroke(0, 0, 0);
   strokeWeight(10);
   line(50, 20, 135, 60);
   line(250, 20, 165, 60);
+  
+  // streep naar trechter 
+  line(75, 175, 145, 100); 
 
+  // streep naar rad
+  line(200, 175, 145, 100);
+
+  /*
   // rails die de knikker afloopt
   line(100, 150, 150, 100);
   line(100, 150, 150, 20);
-  
+  */
 
 
   // arduino elementen
