@@ -23,12 +23,14 @@ function setup() {
 
   teller = new Teller (150, 50);
   poortje = new Poortje (100, 50);
+
+  /*
   rad = new Rad (200,200);
   led = new Led (10,10); 
   led2 = new Led2 (10,10);
   scherm = new Scherm (150, 100);
   snelheidsmeter = new Snelheidsmeter (100, 50);
-
+  */
 
 
 
@@ -48,7 +50,7 @@ function draw() {
   // hieronder wordt schematisch een knikkerbaan getekend
 
   // achtergrond: houtkleur, kies gerust iets anders
-  background(175, 144, 105);
+  background(0, 160, 150);
 
   // twee dikke strepen als 'opvangbak'
   stroke(0, 0, 0);
@@ -59,6 +61,8 @@ function draw() {
   // rails die de knikker afloopt
   line(50, 20, 120, 60);
   line(100, 20, 120, 60);
+
+  /*
   line(50, 50, 120, 60);
   line(100, 50, 120, 60);
   line(150, 80, 120, 60);
@@ -82,7 +86,7 @@ function draw() {
   //rad
 
   //trechter
-
+  */ 
 }
 
 

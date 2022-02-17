@@ -50,7 +50,7 @@ function creeerNieuweRun(request, response) {
   // insert een nieuwe regel in de tabel 'runs'
   // waarin we alleen de huidige tijd (timestamp) meegeven
   db.prepare("INSERT INTO runs (stamp) VALUES (CURRENT_TIMESTAMP)").run();
-  response.status(200).send("ok welkom");
+  response.status(200).send();
 }
 
 
