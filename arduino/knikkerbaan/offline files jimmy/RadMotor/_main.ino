@@ -3,9 +3,9 @@
 radMotor servoRad = radMotor();
 SensorPoort servoPoort = SensorPoort();
 
-PoortIR poortDetector = PoortIR(7);
-PoortIR LEDSensorL = PoortIR(8);
-PoortIR LEDSensorR = PoortIR(6);
+IRsensor poortDetector = IRsensor(7);
+IRsensor LEDSensorL = IRsensor(8);
+IRsensor LEDSensorR = IRsensor(6);
 
 Led LEDRood = Led(9);
 Led LEDGroen = Led(10);
@@ -66,27 +66,7 @@ LEDSensorR.update();
     LEDGroen.off();
   }
 
-
- // rodeLamp.on();
-
- // rodeLamp.off();
-
  // servoRad.close();
   
-
-
-  
-  // laat de teller detecteren:
-
-  
-  // pauzeer de knikkerbaan als het tijd is voor contact met server
-
-
-  // knikkerbaan is leeggelopen, er zijn geen sensors dit iets moeten meten
-  // nu is het tijd om contact te leggen met de server:
-
-
-    // en zet nu het poortje weer open:
-
   }
 ;

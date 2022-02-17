@@ -1,4 +1,4 @@
-class PoortIR {
+class IRsensor {
   private:
   int pin;
   bool wasOnderbroken;
@@ -10,7 +10,7 @@ class PoortIR {
     }
 
     public:
-    PoortIR(int _pin) {
+    IRsensor(int _pin) {
       pinMode(_pin, INPUT_PULLUP);
       pin = _pin;
       wasOnderbroken = false;
@@ -24,9 +24,4 @@ class PoortIR {
       Serial.println(digitalRead(pin));
       wasOnderbroken = isOnderbroken();
     }
-
-    
-
-
-  
 };
