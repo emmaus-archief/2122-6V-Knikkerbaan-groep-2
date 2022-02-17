@@ -84,9 +84,19 @@ function draw() {
   line(15, 505, 130, 580); 
 
   // scherm 
+  fill(237, 185, 198);
   rect(165, 485, 120, 50);
 
   // trechter 
+
+  stroke(227, 227, 209);
+  strokeWeight(2);
+  line(15, 215, 115, 235); // stukjes erdoorheen 
+  line(15, 255, 115, 245);
+  line(15, 265, 115, 295);
+
+  stroke(0, 0, 0);
+  strokeWeight(10);
   line(25, 200, 25, 300); // wanden
   line(100, 200, 100, 300); 
   line(25, 300, 50, 325); // inlopende delen
@@ -94,20 +104,26 @@ function draw() {
   line(50, 325, 50, 350);
   line(75, 325, 75, 350);
 
-  stroke(0, 0, 0);
-  strokeWeight(2);
-  line(15, 215, 115, 235); // stukjes erdoorheen 
-  line(15, 255, 115, 245);
-  line(15, 265, 115, 295);
-
   // rad 
   stroke(0,0,0); 
-  strokeWeight(8);
+  strokeWeight(7);
   line(220, 250, 270, 240); // rechts
   line(220, 250, 220, 200); // top
   line(220, 250, 170, 240); // links
   line(220, 250, 255, 300); // rechts onder
   line(220, 250, 185, 300); // links onder
+
+  // led's 
+  stroke('blue');
+  fill('blue');
+  circle(50, 85, 5);
+  stroke('red');
+  fill('red');
+  circle(250, 85, 5);
+
+  // poortje
+  stroke(141, 72, 171);
+  line(145, 315, 145, 355);
 
   // arduino elementen
   teller.show();
