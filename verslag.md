@@ -112,7 +112,14 @@ TOETSWEEK
 - aan code werken (Luna (LCD scherm))
 
 ### week 8 
-- kinkkerbaan af 
+- knop op widget om poort te openen (Helke)
+- laatste wijzigingen en updates aan bord (Helke)
+- aan verslag (Helke en Jimmy)
+- knikkerbaan af, nog te doen 
+  - comments bij code (Jimmy)
+  - info naar server(widget) van teller (?)
+  - info van widget via server naar arduino van poortje (Helke, ?)
+  - SQL database info ontvangen en opslaan (?)
 
 
 ## Technische verantwoording

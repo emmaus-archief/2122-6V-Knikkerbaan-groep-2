@@ -15,13 +15,13 @@ IRsensor SnelheidsSensor = IRsensor(5);
 Led LEDRood = Led(9);
 Led LEDGroen = Led(10);
 
-unsigned long poortTime = 0;
-unsigned long LedRoodTime = 0;
-unsigned long LedGroenTime = 0;
+unsigned long poortTime = 0;                   // zet delay voor de poort
+unsigned long LedRoodTime = 0;                 // zet delay voor leds
+unsigned long LedGroenTime = 0;                // ^     ^       ^ 
 
-int speedTrapDelay = 4000;
-unsigned long speedBeginTime = 4000;
-unsigned long speedEndTime = 0;
+int speedTrapDelay = 4000;                     // delay van 4 seconden om tijd van knikkers te kunnen opnemen
+unsigned long speedBeginTime = 4000;           // 4000, om delay voor eerste knikker te negeren
+unsigned long speedEndTime = 0;                // eindtijd voor de snelheidsberekening
 unsigned long deltaTime = 0;
 
 int serverContactInterval = 15;                // 15 seconden
@@ -37,7 +37,7 @@ void setup() {
   wifi.stuurVerzoek("/api/set/nieuwerun", "");
 
   poortBoven.open();
-///////////////
+// --------------------------------
 servoPoort.begin(2, 0, 90);
 servoPoort.open();
 
@@ -80,7 +80,7 @@ void loop() {
     LEDRood.off();
   }
 
-  //LED rechterzijde baan & IR sensor van LED
+  //LED rechterzijde baan & IR sensor van LED & eerste sensor voor het berekenen van de snelheid
   LEDSensorR.update();
 
   if(LEDSensorR.isOnderbroken()) {
