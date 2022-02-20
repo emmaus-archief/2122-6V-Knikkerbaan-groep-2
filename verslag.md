@@ -115,6 +115,7 @@ TOETSWEEK
 - knop op widget om poort te openen (Helke)
 - laatste wijzigingen en updates aan bord (Helke)
 - aan verslag (Helke en Jimmy)
+- aan code (Luna(LCD, servo))
 - knikkerbaan af, nog te doen 
   - comments bij code (Jimmy)
   - info naar server(widget) van teller (?)
