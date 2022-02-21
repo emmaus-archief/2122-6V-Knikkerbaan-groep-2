@@ -7,22 +7,24 @@ Teller tellerA = Teller(TELLER_A_PIN);
 radMotor servoRad = radMotor();
 SensorPoort servoPoort = SensorPoort();
 
-IRsensor poortDetector = IRsensor(7);
-IRsensor LEDSensorL = IRsensor(8);
-IRsensor LEDSensorR = IRsensor(6);
-IRsensor SnelheidsSensor = IRsensor(5);
+IRsensor poortDetector = IRsensor(POORTDETECTOR_PIN);
+IRsensor LEDSensorL = IRsensor(LEDSENSORL_PIN);
+IRsensor LEDSensorR = IRsensor(LEDSENSORR_PIN);
+IRsensor SnelheidsSensor = IRsensor(SNELHEIDSSENSOR_PIN);
 
-Led LEDRood = Led(9);
-Led LEDGroen = Led(10);
+Led LEDRood = Led(LEDROOD_PIN);
+Led LEDGroen = Led(LEDGROEN_PIN);
 
-unsigned long poortTime = 0;                   // zet delay voor de poort
-unsigned long LedRoodTime = 0;                 // zet delay voor leds
-unsigned long LedGroenTime = 0;                // ^     ^       ^ 
+unsigned long poortTime = 0;                  // zet delay voor de poort
+unsigned long LedRoodTime = 0;                // zet delay voor leds
+unsigned long LedGroenTime = 0;               // ^     ^       ^ 
 
-int speedTrapDelay = 4000;                     // delay van 4 seconden om tijd van knikkers te kunnen opnemen
-unsigned long speedBeginTime = 4000;           // 4000, om delay voor eerste knikker te negeren
-unsigned long speedEndTime = 0;                // eindtijd voor de snelheidsberekening
-unsigned long deltaTime = 0;
+int speedTrapDelay = 4000;                    // delay van 4 seconden om tijd van knikkers te kunnen opnemen
+float distance = 0.40;                        // 4000, om delay voor eerste knikker te negeren
+float lastSpeed = 0.00;                       // eindtijd voor de snelheidsberekening
+unsigned long speedBeginTime = 4000;
+unsigned long speedEndtime = 0;
+float deltaTime = 0.000;
 
 int serverContactInterval = 15;                // 15 seconden
 unsigned long tijdVoorContactMetServer = 0;
@@ -38,13 +40,12 @@ void setup() {
 
   poortBoven.open();
 // --------------------------------
-servoPoort.begin(2, 0, 90);
+servoPoort.begin(SERVOPOORT_PIN, 0, 90);
 servoPoort.open();
 
-servoRad.begin(3,80);
+servoRad.begin(SERVORAD_PIN,80);
 servoRad.open();
 }
-
 
 void loop() {
 
@@ -80,13 +81,14 @@ void loop() {
     LEDRood.off();
   }
 
-  //LED rechterzijde baan & IR sensor van LED & eerste sensor voor het berekenen van de snelheid
+//LED rechterzijde baan & IR sensor van LED & eerste sensor voor het berekenen van de snelheid
   LEDSensorR.update();
 
   if(LEDSensorR.isOnderbroken()) {
     LEDGroen.on();
 
     if((millis() - speedBeginTime) > speedTrapDelay) {
+      Serial.println(speedBeginTime);
       speedBeginTime = millis();
     }
   }
@@ -100,13 +102,21 @@ void loop() {
 SnelheidsSensor.update();
 
   if(SnelheidsSensor.isOnderbroken()) {
-    speedEndTime = millis();
-  }
 
-//delta tijd voor het berekenen van snelheid
-deltaTime = speedEndtime - speedBeginTime;
+    if((millis() - speedEndtime) > speedTrapDelay) {
+      Serial.println(speedEndtime);
+      speedEndtime = millis();
+    }
+
+    //delta tijd voor het berekenen van snelheid
+    deltaTime = (speedEndtime - speedBeginTime);
+    deltaTime = deltaTime / 1000;
   }
-  
+//einde SNELHEIDSSENSOR//
+
+//berekening laatste snelheid
+lastSpeed = distance / deltaTime;
+
   // pauzeer de knikkerbaan als het tijd is voor contact met server
   if (millis() > tijdVoorContactMetServer && poortBoven.getOpen()) {
     poortBoven.sluit();
@@ -121,6 +131,15 @@ deltaTime = speedEndtime - speedBeginTime;
 
     String data = "knikkers=";
     data += tellerA.getAantal();
+
+    Serial.print("Dit was de laatst opgenomen snelheid in m/s: ");
+    Serial.println(lastSpeed,2);
+
+    Serial.print("De poort staat open: ");
+    Serial.println(servoPoort.getOpen());
+
+    Serial.print("De laatste snelheid van rad: ");
+    Serial.println(servoRad.getSpeed());
 
     wifi.stuurVerzoek("/api/set/sensordata", data.c_str());
 
