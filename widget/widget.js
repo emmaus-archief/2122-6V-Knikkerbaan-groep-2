@@ -23,6 +23,13 @@ function setup() {
 
   teller = new Teller (150, 50);
 
+  // maak een button en stel deze in
+  button = createButton('Verstuur');
+  button.position(155, 375);
+  button.mouseClicked(stuurNieuweInstellingen);
+
+   
+
   /*
   poortje = new Poortje (100, 50);
   rad = new Rad (200,200);
@@ -47,7 +54,6 @@ function draw() {
   // schrijf hieronder de code van je widget
   // hieronder wordt schematisch een knikkerbaan getekend
 
-  // achtergrond: houtkleur, kies gerust iets anders
   background(71, 71, 70);
 
   // twee dikke strepen als 'opvangbak'
@@ -179,5 +185,23 @@ function vraagSensorData() {
 // stuurt een http-verzoek aan de server met de
 // nieuwe instellingen
 function stuurNieuweInstellingen() {
-  // moet nog worden gemaakt
+  var request = new XMLHttpRequest();
+
+  // maak een http-verzoek
+  request.open('GET', '/api/set/instellingen?wachttijd=' + wachtijdInput.value(), true)
+
+  // wat uitvoeren als het antwoord teruggegeven wordt?
+  request.onload = function () {
+    if (request.status == 200) {
+      // geeft positieve feedback in widget ofzo
+      console.log("Server accepteerde instellingen.")
+    }
+    else {
+      console.log("server reageert niet zoals gehoopt.");
+      console.log(request.response);
+    }
+  }
+
+  // verstuur het request
+  request.send()
 }
