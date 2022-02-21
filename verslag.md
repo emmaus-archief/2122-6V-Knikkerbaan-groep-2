@@ -105,7 +105,6 @@ TOETSWEEK
 - aan code werken (Jimmy(servo's en ir sensors)) en Luna(LCD-scherm))
 - code voor rad en poort afgemaakt(jimmy)
 - niet oop based code gemaakt voor IR sensors(jimmy)
-- database tabellen afmaken (Caitlin)
 - bord schilderen en extra's (Helke)
 - verslag upaten (Helke)
 - widget (Helke en Jimmy)
@@ -113,10 +112,8 @@ TOETSWEEK
 ### week 7 
 - extras op het bord en finishing touches (Helke)
 - functionele onderdelen op het bord (Helke)
-- Arduino delen op het bord (Helke en Jimmy)
 - aan code werken (Luna (LCD scherm))
-- widget laten werken (caitlin)
-- begin widget (caitlin)
+- begin widget (Helke)
 - LED code werkend gemaakt(jimmy)
 - IR sensors voor poort, LEDS en snelheid afgemaakt en werkend(jimmy)
 - code voor snelheidsberekening afgemaakt en werkend (jimmy)
@@ -130,16 +127,14 @@ TOETSWEEK
 - laatste wijzigingen en updates aan bord (Helke)
 - code integreren en gitpod cleanen (te doen)
 - aan verslag (Helke en Jimmy)
-- aan code (Luna(LCD, servo))
+- aan code (Luna(LCD, servo)
+- Arduino delen op het bord (Helke en Jimmy)
 - knikkerbaan + arduino-onderdelen in elkaar zetten, nog te doen 
   - comments bij code (Jimmy)
   - info naar server(widget) van teller (Caitlin)
   - info van widget via server naar arduino van poortje (Helke)
   - SQL database info ontvangen en opslaan (Caitlin)
-  - widget verturen naar server ( Caitlin)
-  - vragen stellen emc uur (Luna, Caitlin)
-  - waardes in database zetten (Caitlin)
-  -widget design afronden (Caitlin)
+  - widget verturen naar server (Caitlin)
 
 
 ## Technische verantwoording

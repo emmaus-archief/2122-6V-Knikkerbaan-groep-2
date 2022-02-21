@@ -113,9 +113,9 @@ function draw() {
   line(220, 250, 255, 300); // rechts onder
   line(220, 250, 185, 300); // links onder
 
-  // LED GREEN + RED
-  stroke('green');
-  fill('green');
+  // led's 
+  stroke('blue');
+  fill('blue');
   circle(50, 85, 5);
   stroke('red');
   fill('red');
@@ -132,20 +132,14 @@ function draw() {
   circle (160, 350, 5);
 
   // sensor trechter
-  stroke('yellow');
-  fill('yellow');
   circle (40, 350, 5);
   circle (85, 350, 5);
 
-  // sensor LED GREEN
-  stroke ('yellow');
-  fill('yellow');
+  // sensor LED BLUE
   circle (80, 130, 5);
   circle (120, 150, 5);
 
    // sensor LED RED
-   stroke ('yellow');
-   fill('yellow');
    circle (210, 130, 5);
    circle (170, 150, 5);
 
