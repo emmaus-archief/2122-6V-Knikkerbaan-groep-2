@@ -18,8 +18,8 @@
 ## Features
 Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes) kijk in map fotos naar KnikkerBaan.png . De eerste paar zijn voorgegeven:
 
-### feature 1: Opvangen van knikkers
-De knikkerbaan kan knikkers bovenin correct opvangen. De binnenkomende knikkers worden geteld en een poortje bepaalt of knikkers worden doorrollen of worden tegengehouden.
+### feature 1: Opvangen van knikkers (+teller)
+De knikkerbaan kan knikkers bovenin correct opvangen. De binnenkomende knikkers worden geteld d.m.v. de teller en een poortje bepaalt of knikkers doorrollen of worden tegengehouden.
 
 ### feature 2: Doorgeven van gegevens aan server
 De knikkerbaan zendt de hoeveelheid getelde knikkers naar een server die de gegevens opslaat in een database. Deze server kan per 'run' (d.w.z. een nieuwe keer aangaan) gegevens bijhouden.
@@ -27,16 +27,27 @@ De knikkerbaan zendt de hoeveelheid getelde knikkers naar een server die de gege
 ### feature 3: Widget wisselt info uit met knikkerbaan
 In de browser kan met een URL een widget worden geladen. Deze geeft de knikkerbaan schematisch weer in een frame van 800x400px. De getelde knikkers en duur dat de poort openstaat worden hierin getoond. De duur dat de poort openstaat kan hierin worden veranderd. De knikkerbaan kan deze wachttijd van de server ontvangen en zijn werking erop aanpassen.
 
-### feature 4: Snelheid van knikkers wordt opgenomen
-Er zijn twee sensoren, een bij de LED en een in het begin (zoals aangegeven in onze tekening). Wij meten hier de afstand tussen de twee verschillende punten waar de sensoren zitten, deze sensoren meten dan de tijd die de knikkers erover doen om die afstand te overbruggen. Er is ook een wiel aanwezig, die de snelheid van een van de knikkers dus verandert van de 'normale' weg. Door deze twee gegevens (afstand en tijd) kunnen wij dan de snelheid berekenen.
+### feature 4: Sensor LED's
+Er is per 'weg' die de knikker kan nemen een sensor die een LED kan laten knipperen wanneer er een knikker langs de sensor komt. 
+
+### feature 5: Trechter
+In het linker pad van onze knikkerbaan bevindt zich een trechter met houten stokjes. Het doel van deze trechter is om de afgelegde weg van de knikker te veranderen en daarmee dus ook de snelheid. 
+
+### feature 6: Wiel
+In het rechter pad is een wiel die op een bepaalde snelheid ronddraait d.m.v. een servomotor en daardoor, net als de trechter, de snelheid van de knikker verandert. 
+
+### feature 7: Snelheid van knikkers wordt opgenomen
+Er wordt van de knikkers die het rechter pad nemen de snelheid opgenomen. Dit doen wij door eerst de afgelegde afstand te bepalen en daarna vast te leggen hoe lang de knikker over die weg deed, met deze twee gegevens kunnen wij dan de snelheid berekenen. De tijd die de knikker over het pad doet kunnen wij opmeten aan de hand van de 'snelheidssensor' die na het wiel zit (groene lijn op onze tekening).
 
 
-### feature 5: Info wordt op scherm weergegeven
-<beschrijf hier feature 5>
+### feature 8: Info wordt op scherm weergegeven
+Op het LCD-scherm wordt de gemeten snelheid weergegeven. 
 
+### feature 9: Sensor poortje
+Onder aan de trechter zit een sensor die dus weergeeft wanneer een knikker er langs komt. Wanneer er dan een knikker de sensor passeert opent dit het poortje (blauwe lijn genaamd 'sensor poortje' op onze tekening). 
 
-### feature 6:
-<beschrijf hier feature 6>
+### feature 10: poortje
+Na het wiel en de snelheidsmeter zit een poortje die door een servomotor bestuurd wordt (roze/magenta lijn genaamd 'poortje' op onze tekening). Dit poortje gaat open wanneer er door de sensor onder aan de trechter een knikker wordt waargenomen. 
 
 
 
@@ -126,7 +137,7 @@ TOETSWEEK
 - knop op widget om poort te openen (Helke)
 - laatste wijzigingen en updates aan bord (Helke)
 - code integreren en gitpod cleanen (te doen)
-- aan verslag (Helke en Jimmy)
+- aan verslag (Helke, Jimmy en Luna)
 - aan code (Luna(LCD, servo)
 - Arduino delen op het bord (Helke en Jimmy)
 - knikkerbaan + arduino-onderdelen in elkaar zetten, nog te doen 
