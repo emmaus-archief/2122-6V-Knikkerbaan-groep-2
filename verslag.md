@@ -63,6 +63,7 @@ Restweek van de toetsweek.
 
 - Code sensor opstellen (jimmy en luna)
 - de uitlegfilmpjes behandelen (iedereen)
+- Code uit filmpjes overgenomen in code (Jimmy)
 - Code opzetten server (Helke en Caitlin), als dit voldaan is beginnen we met SQL.
 
 ### week 48 
@@ -87,7 +88,7 @@ VAKANTIE
 VAKANTIE
 
 ### week 2 
-??
+Code voor rad en poortje toegevoegd (jimmy)
 
 ### week 3
 TOETSWEEK
@@ -97,10 +98,13 @@ TOETSWEEK
 
 ### week 5 
 - onderdelen op het bord zetten (iedereen)
-- aan code werken (Jimmy() en Luna(LED's))
+- aan code werken Jimmy(voortgang code & poortje) en Luna(LED's))
+- veranderingen aan code poortje(jimmy)
 
 ### week 6 
-- aan code werken (Jimmy(servo's en ir sensors) en Luna(LCD-scherm))
+- aan code werken (Jimmy(servo's en ir sensors)) en Luna(LCD-scherm))
+- code voor rad en poort afgemaakt(jimmy)
+- niet oop based code gemaakt voor IR sensors(jimmy)
 - bord schilderen en extra's (Helke)
 - verslag upaten (Helke)
 - widget (Helke en Jimmy)
@@ -110,10 +114,18 @@ TOETSWEEK
 - functionele onderdelen op het bord (Helke)
 - Arduino delen op het bord (Helke en Jimmy)
 - aan code werken (Luna (LCD scherm))
+- LED code werkend gemaakt(jimmy)
+- IR sensors voor poort, LEDS en snelheid afgemaakt en werkend(jimmy)
+- code voor snelheidsberekening afgemaakt en werkend (jimmy)
+- aan de server verbonden en teller.ino en knikkerpoort.ino werkend gemaakt (jimmy)
+- algemene code cleaning(pins, ints, blanks) (jimmy)
+- begonnen data toevoegen voor widget (jimmy)
+- begonnen integratie testcode met echte code(jimmy)
 
 ### week 8 
 - knop op widget om poort te openen (Helke)
 - laatste wijzigingen en updates aan bord (Helke)
+- code integreren en gitpod cleanen (te doen)
 - aan verslag (Helke en Jimmy)
 - aan code (Luna(LCD, servo))
 - knikkerbaan af, nog te doen 
