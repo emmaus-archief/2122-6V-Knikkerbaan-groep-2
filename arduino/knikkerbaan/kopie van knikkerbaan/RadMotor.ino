@@ -41,4 +41,8 @@ class radMotor {
     bool getOn() {
       return isOn;
     }
+
+    int getSpeed() {
+      return randomSpeed;
+    }
 };
