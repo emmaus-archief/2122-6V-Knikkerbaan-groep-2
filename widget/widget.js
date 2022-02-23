@@ -28,17 +28,9 @@ function setup() {
   button.position(155, 375);
   button.mouseClicked(stuurNieuweInstellingen);
 
-   
-
-  /*
-  poortje = new Poortje (100, 50);
-  rad = new Rad (200,200);
-  led = new Led (10,10); 
-  led2 = new Led2 (10,10);
-  scherm = new Scherm (150, 100);
-  snelheidsmeter = new Snelheidsmeter (100, 50);
-  */
-
+  wachtijdInput = createInput ();
+  wachtijdInput.position = (225, 70);
+  wachtijdInput.size(50); 
 
   // om de ... milliseconden wordt 'vraagSensorData' uitgevoerd
   setInterval(vraagSensorData, UPDATE_INTERVAL);
