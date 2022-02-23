@@ -34,7 +34,7 @@ Er is per 'weg' die de knikker kan nemen een sensor die een LED kan laten knippe
 In het linker pad van onze knikkerbaan bevindt zich een trechter met houten stokjes. Het doel van deze trechter is om de afgelegde weg van de knikker te veranderen en daarmee dus ook de snelheid. 
 
 ### feature 6: Wiel
-In het rechter pad is een wiel die op een bepaalde snelheid ronddraait d.m.v. een servomotor en daardoor, net als de trechter, de snelheid van de knikker verandert. 
+In het rechter pad is een wiel die op een bepaalde snelheid ronddraaid d.m.v. een servomotor en daardoor, net als de trechter, de snelheid van de knikker verandert. 
 
 ### feature 7: Snelheid van knikkers wordt opgenomen
 Er wordt van de knikkers die het rechter pad nemen de snelheid opgenomen. Dit doen wij door eerst de afgelegde afstand te bepalen en daarna vast te leggen hoe lang de knikker over die weg deed, met deze twee gegevens kunnen wij dan de snelheid berekenen. De tijd die de knikker over het pad doet kunnen wij opmeten aan de hand van de 'snelheidssensor' die na het wiel zit (groene lijn op onze tekening).
@@ -124,7 +124,7 @@ TOETSWEEK
 - extras op het bord en finishing touches (Helke)
 - functionele onderdelen op het bord (Helke)
 - aan code werken (Luna (LCD scherm))
-- begin widget (Helke)
+- begin widget (Helke, Caitlin)
 - LED code werkend gemaakt(jimmy)
 - IR sensors voor poort, LEDS en snelheid afgemaakt en werkend(jimmy)
 - code voor snelheidsberekening afgemaakt en werkend (jimmy)
@@ -137,7 +137,7 @@ TOETSWEEK
 - knop op widget om poort te openen (Helke)
 - laatste wijzigingen en updates aan bord (Helke)
 - code integreren en gitpod cleanen (te doen)
-- aan verslag (Helke, Jimmy en Luna)
+- aan verslag (Helke, Jimmy, Caitlin en Luna)
 - aan code (Luna(LCD, servo)
 - Arduino delen op het bord (Helke en Jimmy)
 - knikkerbaan + arduino-onderdelen in elkaar zetten, nog te doen 
