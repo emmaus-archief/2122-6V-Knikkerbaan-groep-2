@@ -1,0 +1,12 @@
+class SensorPoort {
+
+
+  constructor() {
+    
+  }
+
+  show() {
+
+  }
+
+}

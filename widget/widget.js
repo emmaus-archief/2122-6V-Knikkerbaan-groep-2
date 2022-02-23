@@ -24,7 +24,7 @@ function setup() {
   teller = new Teller (150, 50);
 
   // maak een button en stel deze in
-  button = createButton('Verstuur');
+  button = createButton('Verander');
   button.position(155, 375);
   button.mouseClicked(stuurNieuweInstellingen);
 
@@ -62,23 +62,16 @@ function draw() {
   line(50, 20, 135, 60);
   line(250, 20, 165, 60);
   
-  // streep naar trechter --- wss weg 
-  line(85, 175, 145, 100); 
-  
-  /*
+
   // strepen naar trechter 
   line(45, 140, 145, 100);
   line(10, 140, 50, 180); 
-  */
 
-  // streep naar rad ------- wss weg 
-  line(200, 175, 145, 100);
-
-  /*
   // strepen naar rad
-  line(235, 135, 145, 100);
-  line(275, 140, 240, 185);
-  */
+  line(235, 135, 145, 100); // lange streep 
+  line(275, 140, 240, 160);
+  line(205, 160, 230, 180); // onderste streep direct naar rad
+  line(285, 100, 285, 135); 
 
   // strepen bij rad
   line(90, 385, 280, 300); // streep onder het rad
