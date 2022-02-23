@@ -11,26 +11,24 @@ const int colorG = 0;
 const int colorB = 0;
 */
  
+ int y = 40; //gemeten afstand die knikker aflegt op rechter pad, moet nog aangepast worden
+ int tijd = 20; //gemeten tijd door sensor 'snelheidsmeter' , moet nog aangepast worden
+
 void setup() 
 {
-    // set up the LCD's number of columns and rows:
+    //setup van de rijen en kolommen LCD scherm, dus 16x2
     lcd.begin(16, 2);
  
-    //lcd.setRGB(colorR, colorG, colorB);
- 
-    // Print a message to the LCD.
-    lcd.print("hello, world!");
- 
+    // print de snelheid op LCD scherm
+    lcd.print("Snelheid:")
+
     delay(1000);
 }
  
 void loop() 
 {
-    // set the cursor to column 0, line 1
-    // (note: line 1 is the second row, since counting begins with 0):
+    // cursor op 0,1 dus linksboven van het scherm
     lcd.setCursor(0, 1);
-    // print the number of seconds since reset:
-    lcd.print(millis()/1000);
- 
+    
     delay(100);
 }
