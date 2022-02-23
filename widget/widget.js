@@ -136,6 +136,7 @@ function draw() {
 
   // arduino elementen
   teller.show();
+  //rad.show();
   
 }
 

@@ -137,15 +137,17 @@ TOETSWEEK
 ### week 8 
 - knop op widget om poort te openen (Helke)
 - laatste wijzigingen en updates aan bord (Helke)
-- code integreren en gitpod cleanen (te doen)
+- code integreren en gitpod cleanen (Jimmy)
 - aan verslag (Helke, Jimmy en Luna)
-- aan code (Luna(LCD, servo)
+- aan code (Luna(LCD)
 - Arduino delen op het bord (Helke en Jimmy)
+- arduino data verstuurbaar gemaakt naar server-app.js (Jimmy)
+- gegenereerde data op server opgeslagen in SQL-database overbodige code SQL verwijderd (Jimmy)
 - knikkerbaan + arduino-onderdelen in elkaar zetten, nog te doen 
   - comments bij code (Jimmy)
   - info van widget via server naar arduino van poortje (Helke)
-  - SQL database info ontvangen en opslaan (Caitlin)
   - widget versturen naar server (Jimmy en Helke)
+
 
 
 ## Technische verantwoording

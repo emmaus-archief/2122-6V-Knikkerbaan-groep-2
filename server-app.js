@@ -57,7 +57,7 @@ function creeerNieuweRun(request, response) {
 // geeft laatste sensordata van de run terug 
 function getSensorData(request, response) {
   var huidigeRunID = geefHoogsteRunID();
-  var stmt = db.prepare('SELECT aantalKnikkers FROM sensorData WHERE run = ? ORDER BY stamp DESC');
+  var stmt = db.prepare('SELECT aantalKnikkers, knikkerSpeed, portStatus, radSpeed FROM sensorData WHERE run = ? ORDER BY stamp DESC');
   var data = stmt.get(huidigeRunID);
   response.status(200).send(data);
 }
@@ -66,10 +66,13 @@ function getSensorData(request, response) {
 // slaat doorgegeven data op in de database
 function setSensorData(request, response) {
   var aantalNieuweKnikkers = request.query.knikkers;
+  var laatsteKnikkerspeed = request.query.knikkerSpeed;
+  var laatstePortstatus = request.query.portStatus;
+  var laatsteradSpeed = request.query.radSpeed;
   var huidigeRunID = geefHoogsteRunID();
-  var SQL = `INSERT INTO sensorData (run, stamp, aantalKnikkers)
-             VALUES (?, CURRENT_TIMESTAMP, ?)`
-  db.prepare(SQL).run(huidigeRunID, aantalNieuweKnikkers);
+  var SQL = `INSERT INTO sensorData (run, stamp, aantalKnikkers, knikkerSpeed, portStatus, radSpeed)
+             VALUES (?, CURRENT_TIMESTAMP, ?, ?, ?, ?)`;
+  db.prepare(SQL).run(huidigeRunID, aantalNieuweKnikkers, laatsteKnikkerspeed, laatstePortstatus, laatsteradSpeed);
   response.status(200).send();
 }
 
