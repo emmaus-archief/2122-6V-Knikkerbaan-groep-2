@@ -161,6 +161,18 @@ lastSpeed = distance / deltaTime;
     
     tijdVoorContactMetServer = millis() + (unsigned long)serverContactInterval * 1000;
 
+    String serverAntwoord = wifi.stuurVerzoek("/api/get/instellingen", "");
+    Serial.println(serverAntwoord);
+
+    JSONVar ontvangenInstellingen = JSON.parse(serverAntwoord);
+
+    if (JSON.typeof(ontvangenInstellingen) != "undefined") {
+      serverContactInterval = ontvangenInstellingen["wachttijdPoort"];
+      gradenRad = ontvangenInstellingen["radBeginsnelheid"];
+    }
+    else {
+      Serial.println("FOUT: serverAntwoord kon niet worden verwerkt");
+    }
 
     // en zet nu het poortje weer open:
     poortBoven.open();

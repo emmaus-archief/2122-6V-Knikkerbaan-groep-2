@@ -137,11 +137,15 @@ Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes)
   - aan code (Luna(LCD)
   - Arduino delen op het bord (Helke en Jimmy)
   - arduino data verstuurbaar gemaakt naar server-app.js (Jimmy)
-  - gegenereerde data op server opgeslagen in SQL-database overbodige code SQL verwijderd (Jimmy)
+  - gegenereerde arduino data op server opgeslagen in SQL-database overbodige code SQL verwijderd (Jimmy)
+  - widget data verstuurbaar gemaakt naar server-app.js (jimmy)
+  - gegenereerde widget data op server opgeslagen in SQl-database (jimmy)
+  - arduino code geschreven voor het opvangen van instellingen (jimmy)
   - comments bij code (Jimmy)
   - info van widget via server naar arduino van poortje (Helke)
   - widget versturen naar server (Jimmy en Helke)
   - classes kloppend maken bij widget (Caitlin)
+  
 
 
 

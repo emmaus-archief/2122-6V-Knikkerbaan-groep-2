@@ -2,6 +2,9 @@
 // globale variabelen
 var aantalKnikkersBoven = 0;    // aantal knikkers dat bovenin is binnengekomen
 const UPDATE_INTERVAL = 5000;   // tijd in milliseconden tussen het door widget opvragen van gegevens
+var wachttijdInput;
+var radbeginsnelheidInput;
+
 var button; 
 var teller;
 var poortje;  
@@ -29,6 +32,14 @@ function setup() {
   button = createButton('Verander');
   button.position(155, 375);
   button.mouseClicked(stuurNieuweInstellingen);
+
+  wachttijdInput = createInput();
+  wachttijdInput.position(225, 70);
+  wachttijdInput.size(50);
+
+  radbeginsnelheidInput = createInput();
+  radbeginsnelheidInput.position(325, 70);
+  radbeginsnelheidInput.size(50);
 
   // om de ... milliseconden wordt 'vraagSensorData' uitgevoerd
   setInterval(vraagSensorData, UPDATE_INTERVAL);
@@ -162,7 +173,7 @@ function stuurNieuweInstellingen() {
   var request = new XMLHttpRequest();
 
   // maak een http-verzoek
-  request.open('GET', '/api/set/instellingen?wachttijd=' + wachtijdInput.value(), true)
+  request.open('GET', '/api/set/instellingen?wachttijd=' + wachttijdInput.value() + '&radBeginsnelheid=' + radbeginsnelheidInput.value(), true)
 
   // wat uitvoeren als het antwoord teruggegeven wordt?
   request.onload = function () {

@@ -90,9 +90,10 @@ function getInstellingen(request, response) {
 function setInstellingen(request, response) {
   var huidigeRunID = geefHoogsteRunID();
   var wachttijd = request.query.wachttijd;
-  var SQL = `INSERT INTO instellingen (run, stamp, wachttijdPoort)
-             VALUES (? , CURRENT_TIMESTAMP, ?)`;
-  db.prepare(SQL).run(huidigeRunID, wachttijd);
+  var radBeginsnelheid = request.query.radBeginsnelheid;
+  var SQL = `INSERT INTO instellingen (run, stamp, wachttijdPoort, radBeginsnelheid)
+             VALUES (? , CURRENT_TIMESTAMP, ?, ?)`;
+  db.prepare(SQL).run(huidigeRunID, wachttijd, radBeginsnelheid);
   response.status(200).send();
 }
 
