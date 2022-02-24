@@ -13,7 +13,6 @@ var sensor;
 var rad;
 var scherm;
 var led;
-var snelheidsmeter;
 
 /**
  * setup
@@ -25,10 +24,10 @@ function setup() {
   createCanvas(300, 600);
 
   teller = new Teller (150, 50);
-  radSpeed = new Radspeed (150, 70);
+  radSpeed = new Radspeed (211, 255);
   poortje = new Poortje (145, 315);
   rad = new Rad (220, 250);
-  snelheid= new Snelheid (165, 485);
+  scherm = new Scherm (165, 485);
 
 
   // maak een button en stel deze in
@@ -67,15 +66,6 @@ function draw() {
   textStyle(BOLD); 
   text('Radsnelheid', 229, 338); // bij button voor radsneleheid
   text('Wachttijd', 10, 38);     // bij button voor wachttijdInput 
-  
-
-  // arduino elementen
-  teller.show();
-  radSpeed.show();
-  poortje.show();
-  rad.show();
-  snelheid.show(); // scherm
-
 
   // twee dikke strepen als 'opvangbak'
   stroke(0, 0, 0);
@@ -103,7 +93,6 @@ function draw() {
   line(15, 505, 130, 580); 
 
   // trechter 
-
   stroke(227, 227, 209);
   strokeWeight(2);
   line(15, 215, 115, 235); // stukjes erdoorheen 
@@ -127,29 +116,36 @@ function draw() {
   fill('red');
   circle(250, 85, 5);
 
+  // sensors 
+    // sensor teller 
+    stroke('yellow');
+    fill('yellow');
+    circle(120, 75, 5);
+    circle(180, 75, 5);
 
-  // sensor teller 
-  stroke('yellow');
-  fill('yellow');
-  circle(120, 75, 5);
-  circle(180, 75, 5);
-
-  // sensor trechter
-  circle (40, 350, 5);
-  circle (85, 350, 5);
+    // sensor trechter
+    circle (40, 350, 5);
+    circle (85, 350, 5);
 
 
-  // sensor LED BLUE  
-  circle (80, 130, 5); 
-  circle (70, 90, 5);
+    // sensor LED BLUE  
+    circle (80, 130, 5); 
+    circle (70, 90, 5);
 
-  // sensor LED RED en punt 1 snelheidsmeter
-  circle (210, 130, 5);
-  circle (220, 90, 5);
+    // sensor LED RED en punt 1 snelheidsmeter
+    circle (210, 130, 5);
+    circle (220, 90, 5);
 
-  // sensor punt 2 snelheidsmeter
-  circle (160, 320, 5);
-  circle (160, 350, 5);
+    // sensor punt 2 snelheidsmeter
+    circle (160, 320, 5);
+    circle (160, 350, 5);
+
+  // arduino elementen
+  teller.show();
+  rad.show();
+  radSpeed.show();
+  scherm.show(); // scherm
+  poortje.show();
 
 }
 

@@ -12,6 +12,8 @@ class Rad {
       // rad getekend
   stroke(0,0,0); 
   strokeWeight(7);
+  fill('black');
+  circle(220, 250, 25);
   line(220, 250, 270, 240); // rechts
   line(220, 250, 220, 200); // top
   line(220, 250, 170, 240); // links

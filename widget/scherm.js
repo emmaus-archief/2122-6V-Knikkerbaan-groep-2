@@ -1,4 +1,4 @@
-class Snelheid {
+class Scherm {
   x;
   y;
   snelheid;
@@ -11,6 +11,7 @@ class Snelheid {
 
   show(){
      // scherm getekend
+  stroke('black');
   fill(237, 185, 198);
   rect(165, 485, 120, 50);
      // snelheid 
