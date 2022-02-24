@@ -144,10 +144,12 @@ Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes)
   - arduino code geschreven voor het opvangen van instellingen (jimmy)
   - comments bij code (Jimmy)
   - info van widget via server naar arduino van poortje (Helke)
-  - widget versturen naar server (Jimmy en Helke)
+  - widget versturen naar server (Jimmy)
+  - radsnelheid creëren en van widget naar server versturen (Jimmy)
+  - radsnelheid in widget (Helke)
+  - knikker snelheid op scherm widget (Helke)
   - classes kloppend maken bij widget (Caitlin)
   
-
 
 
 ## Technische verantwoording
