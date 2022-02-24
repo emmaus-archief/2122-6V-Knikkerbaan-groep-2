@@ -152,7 +152,7 @@ Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes)
 
 ## Technische verantwoording
 
-De Arduino werkt op de volgende manier:
+De Arduino werkt op de volgende manier: De teller neemt waar of er, en hoeveel, knikkers langskomen. Vervolgens nemen de volgende sensoren ook weer waar of er een knikker langs komt, zo ja, dan gaat er een LED aan. Wanneer een knikker het linkerpad neemt en door de trechter valt komt de knikker langs het 'sensor poortje', die het poortje (in magenta aangegeven op tekening) aanstuurt. Als de knikker het rechterpad neemt en na het rad langs de 'snelheidsmeter' komt wordt die tijd afgelezen door de arduino en wordt er d.m.v. een formule de snelheid berekend. Het rad wordt bestuurd door een servo, die het rad dus rond laat draaien op een bepaalde snelheid en de knikkers 'doorgeeft' aan het volgende deel van de baan.
 
 De knikkerbaan en de widget wisselen de volgende data met elkaar uit:
 De knikkerbaan stuurt naar de widget hoeveel knikkers deze telt d.m.v. de sensors. De widget stuurt naar de knikkerbaan een opdracht om het poortje te openen. 
