@@ -20,8 +20,8 @@ unsigned long LedRoodTime = 0;
 unsigned long LedGroenTime = 0;
 
 int speedTrapDelay = 4000;
-float distance = 0.40;
-float lastSpeed = 0.00;
+float distance = 0.400;
+float lastSpeed = 0.000;
 unsigned long speedBeginTime = 4000;
 unsigned long speedEndtime = 0;
 float deltaTime = 0.000;
@@ -133,31 +133,26 @@ lastSpeed = distance / deltaTime;
     Serial.print("Er zijn nu zoveel knikkers geteld: ");
     Serial.println(tellerA.getAantal());
 
-    String data = "knikkers=";
-    data += tellerA.getAantal();
-
     Serial.print("Dit was de laatst opgenomen snelheid in m/s: ");
-    Serial.println(lastSpeed,2);
-
-    String data2 = "knikkerSpeed=";
-    data2 += String(lastSpeed,2);
+    Serial.println(lastSpeed,3);
 
     Serial.print("De poort staat open: ");
     Serial.println(servoPoort.getOpen());
 
-    String data3 = "portStatus=";
-    data3 += servoPoort.getOpen();
 
     Serial.print("De laatste snelheid van rad: ");
     Serial.println(servoRad.getSpeed());
 
-    String data4 = "radSpeed=";
-    data4 += servoRad.getSpeed();
+    String data = "knikkers=";
+    data += tellerA.getAantal();
+    data += "&knikkerSpeed=";
+    data += String(lastSpeed,2);
+    data += "&portStatus=";
+    data += servoPoort.getOpen();
+    data += "&radSpeed=";
+    data += servoRad.getSpeed();
 
     wifi.stuurVerzoek("/api/set/sensordata", data.c_str());
-    wifi.stuurVerzoek("/api/set/sensordata", data2.c_str());
-    wifi.stuurVerzoek("/api/set/sensordata", data3.c_str());
-    wifi.stuurVerzoek("/api/set/sensordata", data4.c_str());
     
     tijdVoorContactMetServer = millis() + (unsigned long)serverContactInterval * 1000;
 
