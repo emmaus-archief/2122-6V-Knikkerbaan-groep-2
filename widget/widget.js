@@ -21,6 +21,9 @@ function setup() {
   createCanvas(300, 600);
 
   teller = new Teller (150, 50);
+  poortje = new Poortje (145, 315);
+  rad = new Rad (220, 250);
+  snelheid= new Snelheid (165, 485);
 
   /* SNELHEID OP SCHERM 
   snelheidsmeter = new Snelheidsmeter ()
@@ -75,10 +78,6 @@ function draw() {
   line(180, 445, 75, 500); 
   line(15, 505, 130, 580); 
 
-  // scherm 
-  fill(237, 185, 198);
-  rect(165, 485, 120, 50);
-
   // trechter 
 
   stroke(227, 227, 209);
@@ -96,15 +95,6 @@ function draw() {
   line(50, 325, 50, 350);
   line(75, 325, 75, 350);
 
-  // rad 
-  stroke(0,0,0); 
-  strokeWeight(7);
-  line(220, 250, 270, 240); // rechts
-  line(220, 250, 220, 200); // top
-  line(220, 250, 170, 240); // links
-  line(220, 250, 255, 300); // rechts onder
-  line(220, 250, 185, 300); // links onder
-
   // led's 
   stroke('blue');
   fill('blue');
@@ -113,9 +103,6 @@ function draw() {
   fill('red');
   circle(250, 85, 5);
 
-  // poortje
-  stroke(141, 72, 171);
-  line(145, 315, 145, 355);
 
   // sensor teller 
   stroke('yellow');
@@ -126,6 +113,7 @@ function draw() {
   // sensor trechter
   circle (40, 350, 5);
   circle (85, 350, 5);
+
 
   // sensor LED BLUE  
   circle (80, 130, 5); 
@@ -139,10 +127,20 @@ function draw() {
   circle (160, 320, 5);
   circle (160, 350, 5);
 
+  // sensor LED BLUE
+  circle (100, 130, 5);
+  circle (70, 100, 5);
+
+   // sensor LED RED
+   circle (220, 100, 5);
+   circle (190, 130, 5);
+
+
   // arduino elementen
   teller.show();
-  //rad.show();
-  
+  poortje.show();
+  rad.show();
+  snelheid.show();
 }
 
 

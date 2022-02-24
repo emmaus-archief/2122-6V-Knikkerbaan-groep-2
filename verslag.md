@@ -147,6 +147,7 @@ TOETSWEEK
 - comments bij code (Jimmy)
 - info van widget via server naar arduino van poortje (Helke)
 - widget versturen naar server (Jimmy en Helke)
+- classes kloppend maken bij widget (Caitlin)
 
 
 

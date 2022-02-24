@@ -9,5 +9,9 @@ class Snelheid {
     this.snelheid = 0;
   }
 
-  show();
+  show(){
+     // scherm getekend
+  fill(237, 185, 198);
+  rect(165, 485, 120, 50);
+  }
 }
