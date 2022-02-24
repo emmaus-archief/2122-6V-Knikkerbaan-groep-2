@@ -2,7 +2,7 @@
 // globale variabelen
 var aantalKnikkersBoven = 0;    // aantal knikkers dat bovenin is binnengekomen
 const UPDATE_INTERVAL = 5000;   // tijd in milliseconden tussen het door widget opvragen van gegevens
-var wachttijdInput;
+var wachttijdInput;             // wachttijd kan je veranderen 
 var radbeginsnelheidInput;
 
 var button; 
@@ -30,15 +30,15 @@ function setup() {
 
   // maak een button en stel deze in
   button = createButton('Verander');
-  button.position(155, 375);
+  button.position(235, 570);
   button.mouseClicked(stuurNieuweInstellingen);
 
   wachttijdInput = createInput();
-  wachttijdInput.position(225, 70);
+  wachttijdInput.position(10, 40);
   wachttijdInput.size(50);
 
   radbeginsnelheidInput = createInput();
-  radbeginsnelheidInput.position(325, 70);
+  radbeginsnelheidInput.position(230, 340);
   radbeginsnelheidInput.size(50);
 
   // om de ... milliseconden wordt 'vraagSensorData' uitgevoerd
@@ -55,7 +55,16 @@ function draw() {
   // schrijf hieronder de code van je widget
   // hieronder wordt schematisch een knikkerbaan getekend
 
-  background(71, 71, 70);
+  background(71, 71, 70); 
+
+  // tekst bij buttons
+  noStroke();
+  fill('white');
+  textSize(10);
+  textStyle(BOLD); 
+  text('Radsnelheid', 229, 338); // bij button voor radsneleheid
+  text('Wachttijd', 10, 38);     // bij button voor wachttijdInput 
+  
 
   // arduino elementen
   teller.show();

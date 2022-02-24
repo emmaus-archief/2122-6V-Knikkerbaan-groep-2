@@ -13,5 +13,11 @@ class Snelheid {
      // scherm getekend
   fill(237, 185, 198);
   rect(165, 485, 120, 50);
+     // snelheid 
+  noStroke();
+  fill('black');
+  textSize(30);
+  textStyle(BOLD);
+  text(this.snelheid, 180, 520);
   }
 }
