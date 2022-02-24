@@ -13,7 +13,7 @@ class Radspeed {
     noStroke();               // geen rand
     fill(255, 255, 255);      // zwart
     textSize(14);
-    // print aantal knikkers bovenin
+    // print laatste radsnelheid
     text(this.snelheid, this.x, this.y);
   }
 }

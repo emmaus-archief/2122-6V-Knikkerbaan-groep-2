@@ -9,10 +9,10 @@ CREATE TABLE sensorData (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   run INTEGER NOT NULL,
   stamp DATETIME NOT NULL,
-  aantalKnikkers INTEGER,
-  knikkerSpeed INTEGER,
-  portStatus INTEGER,
-  radSpeed INTEGER
+  aantalKnikkers INTEGER NOT NULL,
+  knikkerSpeed INTEGER NOT NULL,
+  portStatus INTEGER NOT NULL,
+  radSpeed INTEGER NOT NULL
 );
 
 CREATE TABLE instellingen (
@@ -20,7 +20,7 @@ CREATE TABLE instellingen (
   run INTEGER NOT NULL,
   stamp DATETIME NOT NULL,
   wachttijdPoort INTEGER NOT NULL,
-  radBeginsnelheid INTEGER
+  radBeginsnelheid INTEGER NOT NULL
 );
 
 /* Indien je standaard wat gegevens in de database wilt,
