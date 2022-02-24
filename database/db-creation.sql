@@ -26,5 +26,5 @@ CREATE TABLE instellingen (
 /* Indien je standaard wat gegevens in de database wilt,
    voeg hieronder dan INSERT regels to */
 INSERT INTO runs (stamp) VALUES (CURRENT_TIMESTAMP);
-INSERT INTO sensorData (run, stamp, aantalKnikkers) VALUES (1, CURRENT_TIMESTAMP, 3);
+INSERT INTO sensorData (run, stamp, aantalKnikkers, knikkerSpeed, portStatus, radSpeed) VALUES (1, CURRENT_TIMESTAMP, 3, 5, 1, 20);
 INSERT INTO instellingen (run, stamp, wachttijdPoort, radBeginsnelheid) VALUES (1, CURRENT_TIMESTAMP, 15, 80);

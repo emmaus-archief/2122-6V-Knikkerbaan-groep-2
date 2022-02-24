@@ -4,6 +4,7 @@ var aantalKnikkersBoven = 0;    // aantal knikkers dat bovenin is binnengekomen
 const UPDATE_INTERVAL = 5000;   // tijd in milliseconden tussen het door widget opvragen van gegevens
 var wachttijdInput;             // wachttijd kan je veranderen 
 var radbeginsnelheidInput;
+var radSpeed;
 
 var button; 
 var teller;
@@ -24,9 +25,11 @@ function setup() {
   createCanvas(300, 600);
 
   teller = new Teller (150, 50);
+  radSpeed = new Radspeed (150, 70);
   poortje = new Poortje (145, 315);
   rad = new Rad (220, 250);
   snelheid= new Snelheid (165, 485);
+
 
   // maak een button en stel deze in
   button = createButton('Verander');
@@ -68,9 +71,11 @@ function draw() {
 
   // arduino elementen
   teller.show();
+  radSpeed.show();
   poortje.show();
   rad.show();
   snelheid.show(); // scherm
+
 
   // twee dikke strepen als 'opvangbak'
   stroke(0, 0, 0);
@@ -164,6 +169,7 @@ function vraagSensorData() {
     if (request.status == 200) {
       console.log("Dit geeft de server terug:" + data);
       teller.aantal = data.aantalKnikkers;
+      radSpeed.snelheid = data.radSpeed;
     }
     else {
       console.log("server reageert niet zoals gehoopt");
