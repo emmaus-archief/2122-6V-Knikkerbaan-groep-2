@@ -25,16 +25,10 @@ function setup() {
   rad = new Rad (220, 250);
   snelheid= new Snelheid (165, 485);
 
-  /* SNELHEID OP SCHERM 
-  snelheidsmeter = new Snelheidsmeter ()
-  */
-
   // maak een button en stel deze in
   button = createButton('Verander');
   button.position(155, 375);
   button.mouseClicked(stuurNieuweInstellingen);
-
-
 
   // om de ... milliseconden wordt 'vraagSensorData' uitgevoerd
   setInterval(vraagSensorData, UPDATE_INTERVAL);
@@ -52,12 +46,17 @@ function draw() {
 
   background(71, 71, 70);
 
+  // arduino elementen
+  teller.show();
+  poortje.show();
+  rad.show();
+  snelheid.show(); // scherm
+
   // twee dikke strepen als 'opvangbak'
   stroke(0, 0, 0);
   strokeWeight(10);
   line(50, 20, 135, 60);
   line(250, 20, 165, 60);
-  
 
   // strepen naar trechter 
   line(45, 140, 145, 100);
@@ -127,11 +126,6 @@ function draw() {
   circle (160, 320, 5);
   circle (160, 350, 5);
 
-  // arduino elementen
-  teller.show();
-  poortje.show();
-  rad.show();
-  snelheid.show();
 }
 
 
