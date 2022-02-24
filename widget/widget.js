@@ -127,15 +127,6 @@ function draw() {
   circle (160, 320, 5);
   circle (160, 350, 5);
 
-  // sensor LED BLUE
-  circle (100, 130, 5);
-  circle (70, 100, 5);
-
-   // sensor LED RED
-   circle (220, 100, 5);
-   circle (190, 130, 5);
-
-
   // arduino elementen
   teller.show();
   poortje.show();
