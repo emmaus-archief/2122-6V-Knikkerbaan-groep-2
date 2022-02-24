@@ -1,15 +1,14 @@
 
 // globale variabelen
 var aantalKnikkersBoven = 0;    // aantal knikkers dat bovenin is binnengekomen
-var wachttijd = 15;             // wachttijd voor het poortje in seconden
 const UPDATE_INTERVAL = 5000;   // tijd in milliseconden tussen het door widget opvragen van gegevens
+var button; 
 var teller;
-var wachtijdInput;
+var poortje;  
 var sensor;
 var rad;
 var scherm;
 var led;
-var poortje;
 var snelheidsmeter;
 
 /**
@@ -23,14 +22,16 @@ function setup() {
 
   teller = new Teller (150, 50);
 
+  /* SNELHEID OP SCHERM 
+  snelheidsmeter = new Snelheidsmeter ()
+  */
+
   // maak een button en stel deze in
   button = createButton('Verander');
   button.position(155, 375);
   button.mouseClicked(stuurNieuweInstellingen);
 
-  wachtijdInput = createInput ();
-  wachtijdInput.position = (225, 70);
-  wachtijdInput.size(50); 
+
 
   // om de ... milliseconden wordt 'vraagSensorData' uitgevoerd
   setInterval(vraagSensorData, UPDATE_INTERVAL);
@@ -116,23 +117,27 @@ function draw() {
   stroke(141, 72, 171);
   line(145, 315, 145, 355);
 
-  // Snelheidsmeter - sensor
+  // sensor teller 
   stroke('yellow');
   fill('yellow');
-  circle (160, 320, 5);
-  circle (160, 350, 5);
+  circle(120, 75, 5);
+  circle(180, 75, 5);
 
   // sensor trechter
   circle (40, 350, 5);
   circle (85, 350, 5);
 
-  // sensor LED BLUE
-  circle (80, 130, 5);
-  circle (120, 150, 5);
+  // sensor LED BLUE  
+  circle (80, 130, 5); 
+  circle (70, 90, 5);
 
-   // sensor LED RED
-   circle (210, 130, 5);
-   circle (170, 150, 5);
+  // sensor LED RED en punt 1 snelheidsmeter
+  circle (210, 130, 5);
+  circle (220, 90, 5);
+
+  // sensor punt 2 snelheidsmeter
+  circle (160, 320, 5);
+  circle (160, 350, 5);
 
   // arduino elementen
   teller.show();
