@@ -40,7 +40,7 @@ Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes)
   Er wordt van de knikkers die het rechter pad nemen de snelheid opgenomen. Dit doen wij door eerst de afgelegde afstand te bepalen en daarna vast te leggen hoe lang de knikker over die weg deed, met deze twee gegevens kunnen wij dan de snelheid berekenen. De tijd die de knikker over het pad doet kunnen wij opmeten aan de hand van de 'snelheidssensor' die na het wiel zit (groene lijn op onze tekening).
 
 ### feature 8: Info wordt op scherm weergegeven
-  Op het LCD-scherm wordt de gemeten snelheid weergegeven. 
+  Het was de bedoeling dat de snelheid van de knikkers op een LCD-scherm weergegeven zouden worden, maar dit is helaas niet mogelijk i.v.m. problemen met het soort arduino bord dat we gebruiken. In plaats hiervan printen we de snelheid op de Seriële monitor.
 
 ### feature 9: Sensor poortje
   Onder aan de trechter zit een sensor die dus weergeeft wanneer een knikker er langs komt. Wanneer er dan een knikker de sensor passeert opent dit het poortje (blauwe lijn genaamd 'sensor poortje' op onze tekening). 
