@@ -166,7 +166,7 @@ function vraagSensorData() {
       console.log("Dit geeft de server terug:" + data);
       teller.aantal = data.aantalKnikkers;
       radSpeed.snelheid = data.radSpeed;
-      snelheid.snelheid = data.knikkerSpeed;
+      scherm.snelheid = data.knikkerSpeed;
       poortje.status = data.portStatus;
     }
     else {
