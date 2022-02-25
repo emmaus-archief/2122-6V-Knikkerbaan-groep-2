@@ -149,6 +149,18 @@ Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes)
   - radsnelheid in widget (Helke)
   - knikker snelheid op scherm widget (Helke)
   - classes kloppend maken bij widget (Caitlin)
+
+### week 9 
+VAKANTIE 
+  - widget en database checken? 
+  - iets doen aan rad
+
+### week 10
+  - gaten op bord voor sensors
+  - laatste onderdelen op bord 
+      - latjes fixen
+      - (hopelijk beter) rad 
+      - sensors 
   
 
 
