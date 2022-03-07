@@ -14,6 +14,9 @@ class Poortje {
     stroke(141, 72, 171); 
     line(145, 315, 145, 355);
 
+    stroke(141, 72, 171); 
+    line(130, 60, 170, 60);
+
     noStroke();               // geen rand
     fill(255, 255, 255);      // wit
     textSize(14);
