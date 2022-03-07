@@ -26,6 +26,8 @@ unsigned long speedBeginTime = 4000;
 unsigned long speedEndtime = 0;
 float deltaTime = 0.000;
 
+int gradenRad = 80;
+
 int serverContactInterval = 15;                // 15 seconden
 unsigned long tijdVoorContactMetServer = 0;
 
@@ -43,7 +45,7 @@ void setup() {
 servoPoort.begin(SERVOPOORT_PIN, 0, 90);
 servoPoort.open();
 
-servoRad.begin(SERVORAD_PIN,80);
+servoRad.begin(SERVORAD_PIN,gradenRad);
 servoRad.open();
 }
 
@@ -74,7 +76,7 @@ void loop() {
  //LED linkerzijde baan & IR sensor van LED
   LEDSensorL.update();
 
-  if(LEDSensorL.isOnderbroken()) {
+  if(!LEDSensorL.isOnderbroken()) {
     LEDRood.on();
   }
 
@@ -85,7 +87,7 @@ void loop() {
   //LED rechterzijde baan & IR sensor van LED
   LEDSensorR.update();
 
-  if(LEDSensorR.isOnderbroken()) {
+  if(!LEDSensorR.isOnderbroken()) {
     LEDGroen.on();
 
     if((millis() - speedBeginTime) > speedTrapDelay) {
@@ -102,7 +104,7 @@ void loop() {
 //SnelheidsSensor
 SnelheidsSensor.update();
 
-  if(SnelheidsSensor.isOnderbroken()) {
+  if(!SnelheidsSensor.isOnderbroken()) {
 
     if((millis() - speedEndtime) > speedTrapDelay) {
       Serial.println(speedEndtime);
