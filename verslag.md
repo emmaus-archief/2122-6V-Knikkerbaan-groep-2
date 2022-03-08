@@ -188,7 +188,7 @@ Uitdagingen die we tegenkwamen:
 
 
 #### Caitlin
-
+Het was een leuke opdracht waarin je veel creativiteit gebruikte. Ik heb geleerd hoe je met arduino-onderdelen een knikkerbaan in elkaar zet. Ook heb ik geleerd hoe je een widget kunt maken en wat daarbij komt kijken. Wat ik beter onder de knie heb gekregen is het toepassen van classes in de code. 
 
 ---
 
