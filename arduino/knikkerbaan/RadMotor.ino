@@ -31,7 +31,7 @@ class radMotor {
       if ( ( millis() - oldtime) > 5000) {
         oldtime = millis();
 
-        randomSpeed = random(0, 50);
+        randomSpeed = random(40, 80);
       }
       
       radServo.write(randomSpeed);

@@ -5,7 +5,7 @@ const int LEEGLOOP_TIJD = 5000;   // tijd die knikkers nodig hebben om na het
 
 char WIFI_NETWERK[] = "informatica-fast-wifi";
 char WIFI_WACHTWOORD[] = "informatica-rocks!";
-char SERVER_DOMEINNAAM[] = "3000-moccasin-cattle-lc2pi28a.ws-eu17.gitpod.io/";    // domeinnaam van gitpod-server, zoals 3000-lavendel-bla-bla.gitpod.io
+char SERVER_DOMEINNAAM[] = "https://3000-emmaus6v-21226vknikkerba-e34v7owmz2t.ws-eu34.gitpod.io";    // domeinnaam van gitpod-server, zoals 3000-lavendel-bla-bla.gitpod.io
 
 
 const int BOVEN_POORT_PIN = 1;    // pin van servo die bovenste poort regelt
