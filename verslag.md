@@ -183,7 +183,7 @@ Uitdagingen die we tegenkwamen:
 
 
 #### Luna
-
+Ik vond dit een erg leuk eindproject voor informatica. Zelf merkte ik wel dat ik het soms moeilijk had met coderen, maar ik heb er dus ook veel nieuws over geleerd. Ik vond eigenlijk alle aspecten van het project wel leuk.
 
 #### Caitlin
 Het was een leuke opdracht waarin je veel creativiteit gebruikte. Ik heb geleerd hoe je met arduino-onderdelen een knikkerbaan in elkaar zet. Ook heb ik geleerd hoe je een widget kunt maken en wat daarbij komt kijken. Wat ik beter onder de knie heb gekregen is het toepassen van classes in de code. 
