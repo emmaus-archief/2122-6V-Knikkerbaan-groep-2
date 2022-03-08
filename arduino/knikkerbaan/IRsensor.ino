@@ -21,7 +21,6 @@ class IRsensor {
     }
 
     void update() {
-      Serial.println(digitalRead(pin));
       wasOnderbroken = isOnderbroken();
     }
 };

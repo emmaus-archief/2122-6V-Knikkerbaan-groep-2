@@ -26,7 +26,6 @@ function setup() {
   teller = new Teller (150, 50);
   radSpeed = new Radspeed (211, 255);
   poortje = new Poortje (145, 315);
-  poortje = new Poortje (45, 115);
   rad = new Rad (220, 250);
   scherm = new Scherm (165, 485);
 

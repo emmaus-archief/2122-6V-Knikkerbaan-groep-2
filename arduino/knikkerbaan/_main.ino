@@ -22,8 +22,8 @@ unsigned long LedGroenTime = 0;
 int speedTrapDelay = 4000;
 float distance = 0.400;
 float lastSpeed = 0.000;
-unsigned long speedBeginTime = 4000;
-unsigned long speedEndtime = 0;
+unsigned long speedBeginTime = 0;
+unsigned long speedEndtime = 4000;
 float deltaTime = 0.000;
 
 int gradenRad = 80;
