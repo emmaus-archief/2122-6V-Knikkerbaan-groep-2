@@ -40,7 +40,7 @@ Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes)
   Er wordt van de knikkers die het rechter pad nemen de snelheid opgenomen. Dit doen wij door eerst de afgelegde afstand te bepalen en daarna vast te leggen hoe lang de knikker over die weg deed, met deze twee gegevens kunnen wij dan de snelheid berekenen. De tijd die de knikker over het pad doet kunnen wij opmeten aan de hand van de 'snelheidssensor' die na het wiel zit (groene lijn op onze tekening).
 
 ### feature 8: Info wordt op scherm weergegeven
-  Het was de bedoeling dat de snelheid van de knikkers op een LCD-scherm weergegeven zouden worden, maar dit is helaas niet mogelijk i.v.m. problemen met het soort arduino bord dat we gebruiken. In plaats hiervan printen we de snelheid op de Seriële monitor.
+  Het was de bedoeling dat de snelheid van de knikkers op een LCD-scherm weergegeven zouden worden, maar dit is helaas niet mogelijk i.v.m. problemen met het soort arduino bord dat we gebruiken. In plaats hiervan printen we de snelheid op de Seriële monitor en op het scherm in de widget.
 
 ### feature 9: Sensor poortje
   Onder aan de trechter zit een sensor die dus weergeeft wanneer een knikker er langs komt. Wanneer er dan een knikker de sensor passeert opent dit het poortje (blauwe lijn genaamd 'sensor poortje' op onze tekening). 
@@ -152,12 +152,10 @@ Beschrijf hier de eigenschappen van jullie knikkerbaan (gebruik gerust plaatjes)
 
 ### week 9 
 VAKANTIE 
-  - widget en database checken? 
-  - iets doen aan rad
+  - widget en database checken (Jimmy)
 
 ### week 10
-  - gaten op bord voor sensors
-  - laatste onderdelen op bord 
+  - laatste onderdelen op bord (Jimmy en Helke)
       - latjes fixen
       - (hopelijk beter) rad 
       - sensors 
@@ -179,7 +177,7 @@ Uitdagingen die we tegenkwamen:
 
 ## Reflectie op opdracht
 #### Helke
-  *(50 - 100 woorden. Geef o.a. wat je tijdens deze opdracht beter onder de knie hebt gekregen en welk leerpunt je voor jezelf meeneemt)*
+  Ik vond de combinatie van alle verschillende informatica aspecten heel leuk, het leukste daarbij vond ik het designen van bijvoorbeeld de widget en het bord. Het coderen en vooral het begrijpen van code heb ik beter onder de knie gekregen, echter een leerpunt zou zijn om meer te verdiepen in arduino code schrijven en eerder aan de bel te trekken bij gebrekkige samenwerking. 
 
 #### Jimmy
 
